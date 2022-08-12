@@ -1,4 +1,4 @@
-This python code will rename the files present in your folder with the folder's name. So if the Folder's name is "Sample" then the files will be ranmaed to "Sample1.jpeg", "Sample2.jpeg"
+'''This python code will rename the files present in your folder with the folder's name. So if the Folder's name is "Sample" then the files will be ranmaed to "Sample1.jpeg", "Sample2.jpeg" '''
 
 '''Code to mount the drive. Mount means to make a group of files in a 
 file system structure accessible to a user or user group.'''
