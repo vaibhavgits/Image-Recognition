@@ -13,16 +13,14 @@ project_id = ""
 # data = Path of folder of the drive
 data = " "
 folderArray = np.array(os.listdir(data))
+
 def main():
-
-  #bucket_name is the name of main bucket in Google Cloud Storage
+  #bucket_name is the name of main bucket
   bucket_name = " "
-  #1st-for-loop to traverse folders of the Dataset Folder
-  for currentFolder in folderArray:
-    data2 = bucket_name + currentFolder + "/"
-    # Moount data from Drive to Google Storage
-    
-    !gsutil -m cp -rn '''path of the drive folders''' gs://{data2}/
 
+  # Mount data from Drive to Google Storage
+  #Dataset is the folder in my drive which contains the images
+  !gsutil -m cp -rn /content/drive/MyDrive/Dataset/* gs://{bucket_name}/
+    
 if __name__ == '__main__':
     main()
